@@ -14,7 +14,7 @@ export default function Window({ children }: Props) {
   return (
     <Draggable handle={`#${titleBarId}`}>
       <div
-        className="absolute w-fit border-8 border-blue-500"
+        className="absolute w-fit border-8 border-blue-500 z-10"
         style={{ width: size.width, height: size.height }}
       >
         <TitleBar id={titleBarId} />
